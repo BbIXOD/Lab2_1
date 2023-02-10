@@ -1,13 +1,11 @@
 int i = 0;
-float result = 0;
+float result, sum;
 
-float recFirstWay(int x, int depth) {
-    if (i == depth) return result;
+float recFirstWay(float x, int depth) {
+    if (i == depth) return sum;
     i++;
-    if (i == 1) {
-        result += (float)x - 1;
-        return recFirstWay(x, depth);
-    }
-    result += -1 * result * (float)((x - 1) * i) / (float)(i + 1);
+    if (i == 1)result = --x;
+    else result = -1 * result * x * (float)i / (float)(i + 1);
+    sum += result;
     return recFirstWay(x, depth);
 }

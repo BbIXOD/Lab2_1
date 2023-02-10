@@ -1,14 +1,19 @@
-int d, val;
+float val;
+float result2;
 
-float recursion(int i) {
+float recursion(int index) {
     float res;
-    if (i == 1) return (float)val - 1;
-    res = recursion(i - 1);
-    return res + -1 * res * (float)((val - 1) * i) / (float)(i + 1);
+    if (index == 1) {
+        result2 = (float)val;
+        return result2;
+    }
+    res = -1 * recursion(index - 1) * val * (float)index / (float)(index + 1);
+    result2 += res;
+    return res;
 }
 
-float recSecondWay(int x, int depth) {
-    d = depth;
-    val = x;
-    return recursion(d);
+float recSecondWay(float x, int depth) {
+    val = --x;
+    recursion(depth);
+    return result2;
 }
