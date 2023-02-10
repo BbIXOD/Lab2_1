@@ -100,7 +100,8 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -114,12 +115,17 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Rec_One.h",
+			"path" : "Rec1.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Rec_Two.h",
+			"path" : "Rec2.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Rec3.h",
 			"sourceGroupIndex" : 1
 		}
 	],
