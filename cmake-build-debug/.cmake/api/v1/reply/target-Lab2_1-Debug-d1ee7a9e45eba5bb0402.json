@@ -92,7 +92,13 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
 				1
 			]
 		}
@@ -107,8 +113,8 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Rec_One_Way.cpp",
-			"sourceGroupIndex" : 0
+			"path" : "Rec_One_Way.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

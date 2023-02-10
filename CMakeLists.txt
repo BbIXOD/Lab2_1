@@ -3,4 +3,4 @@ project(Lab2_1 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Lab2_1 main.c Rec_One_Way.cpp)
+add_executable(Lab2_1 main.c Rec_One_Way.h)
