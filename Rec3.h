@@ -1,6 +1,5 @@
 int i3 = 0;
 float result3;
-//third function somehow can sometimes show not fully correct answer I think this caused by rounding in different way.
 float recThirdWay(float x, int depth) {
     float res;
     i3++;
