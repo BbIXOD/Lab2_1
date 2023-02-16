@@ -102,8 +102,7 @@
 				1,
 				2,
 				3,
-				4,
-				5
+				4
 			]
 		}
 	],
@@ -127,17 +126,12 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Rec3.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"path" : "Cycle.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Rec3_2.h",
+			"path" : "Rec3.h",
 			"sourceGroupIndex" : 1
 		}
 	],

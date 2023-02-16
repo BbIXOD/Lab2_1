@@ -1,19 +1,22 @@
-float val;
-float result2;
+#include <malloc.h>
 
-float recursion(int index) {
-    float res;
+float* recursion2(float x, int index) {
+    float *resArr = malloc(2 * sizeof* resArr);
     if (index == 1) {
-        result2 = (float)val;
-        return result2;
+        resArr[0] = x;
+        resArr[1] = x;
+        return resArr;
     }
-    res = -1 * recursion(index - 1) * val * (float)index / (float)(index + 1);
-    result2 += res;
-    return res;
+    float *arr = recursion2(x, index - 1);
+    resArr[0] = -1 * arr[0] * x * (float)index / (float)(index + 1);
+    resArr[1] = arr[1] + resArr[0];
+    free(arr);
+    return resArr;
 }
 
 float recSecondWay(float x, int depth) {
-    val = --x;
-    recursion(depth);
-    return result2;
+    float *arr = recursion2(--x, depth);
+    float result = arr[1];
+    free(arr);
+    return result;
 }

@@ -3,7 +3,6 @@
 #include "Rec1.h"
 #include "Rec2.h"
 #include "Rec3.h"
-#include "Rec3_2.h"
 #include "Cycle.h"
 
 float check(float foo, float res) {
@@ -34,7 +33,6 @@ int main() {
     printf("\"There\" recursive function output: %f\n", check(recFirstWay(x, depth), trueRes));
     printf("\"From there\" recursive function output: %f\n", check(recSecondWay(x, depth), trueRes));
     printf("\"Combined\" recursive function output: %f\n", check(recThirdWay(x, depth), trueRes));
-    //place 2 after recThirdWay to see another function output
 
     return 0;
 }
